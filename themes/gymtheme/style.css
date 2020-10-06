@@ -1,0 +1,72 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin-top: 0px !important;
+}
+
+:root{
+    --mainFont:'Staatliches', cursive;
+    --textFont:'Open Sans', sans-serif;
+    --secondary:'Raleway', sans-serif;
+
+    /* colors */
+    --darkGrey:#2F2E2E;
+    --lightGrey:#afafaf;
+    --white:rgb(255, 255, 255);
+    --gymColor:#FF5B00;
+}
+
+body{
+    font-family: var(--textFont);
+    font-size: 1.6rem;
+}
+
+/* Headings */
+
+h1,h2,h3{
+    font-family: var(--mainFont);
+    margin:0.5rem;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+h3{
+    font: 3rem;
+}
+
+p{
+    font-family: var(--secondary)
+}
+
+/* Global */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}

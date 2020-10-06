@@ -1,0 +1,78 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Foot */
+
+.footer{
+    border-top: 2px var(--lightGrey) solid;
+    padding:6rem 0;
+    margin: 0 2rem;
+}
+
+.footer .footer-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+.footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer .footer-content .foot{
+    display: flex;
+}
+.footer .footer-content .foot .menu {
+    display: flex;
+    align-items: center;
+}
+.footer .footer-content .foot .menu li {
+    margin-right: 2rem;
+}
+.footer .footer-content .foot .menu li:last-of-type {
+    margin-right: 0rem;
+}
+.footer .footer-content .foot a{
+    display: block;
+    font-size: 2.8rem;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-family: var(--mainFont);
+}
+.footer .footer-content  p{
+    display: block;
+    font-size: 2.8rem;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-family: var(--mainFont);
+}
+
+@media (max-width:768px){
+    .footer .footer-content .foot .menu{
+        display: none;
+        justify-content: space-between;
+       
+    }
+    .footer .footer-content .nav .logo{
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+
+    .footer .footer-content .nav .logo img{
+        width: 45%;
+    }
+}
