@@ -15,28 +15,28 @@
 
 /* Page */
 
-.page{
+.pageS{
     max-width: 120rem;
     margin: 0 auto;
     margin-bottom: 1.5rem;
 }
-.page .h1Classes{
+.pageS .h1Classes{
     margin-top: 2rem;
     text-align: center;
     color: var(--gymColor);
 }
-.page .title{
+.pageS .title{
     text-align: center;
     margin: 3.5rem;
     color: var(--gymColor);
 }
 
-.page .img{
+.pageS .img{
     max-width: 55rem;
     margin: 0 auto;
 }
 
-.page .content{
+.pageS .content{
     margin: 1rem 16rem;
     text-align: center;
     font-size: 2.5rem;
@@ -47,24 +47,24 @@
 
 
 /* Page Side */
-.page.with-side{
+.pageS.with-side{
     display: flex;
     justify-content: space-between;
 }
 
-.page.with-side .inside{
+.pageS.with-side .inside{
     width: 80%;
 }
-.page.with-side .sides{
+.pageS.with-side .sides{
     width: 20%;
 }
-.page.with-side .sides .title{
+.pageS.with-side .sides .title{
     font-size: 4rem;
 }
 
 
 @media (max-width:768px){
-    .page .content{
+    .pageS .content{
         margin: 1rem 1.5rem;
         text-align: left;
         font-size: 2.5rem;
@@ -73,10 +73,10 @@
         line-height: 4rem;
     }
 
-    .page.with-side .inside{
+    .pageS.with-side .inside{
         width: 100%;
     }
-    .page.with-side .sides{
+    .pageS.with-side .sides{
         display: none;
     }
 }

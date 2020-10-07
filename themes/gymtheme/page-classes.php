@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
- <main class="page classes">
+ <main class="pageS classes">
     <h1 class="h1Classes"><?php echo get_the_title(); ?></h1>
     <?php  gym_classes_list();?>
  </main>

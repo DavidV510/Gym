@@ -2,7 +2,7 @@
 
 ?>
 
-<main class="page no-side">
+<main class="pageS no-side">
 <?php 
   
   $category=get_queried_object();

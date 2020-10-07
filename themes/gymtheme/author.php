@@ -2,7 +2,7 @@
  $author=get_queried_object();
 ?>
 
-<main class="page no-side">
+<main class="pageS no-side">
 <h1 class="h1Classes"><?php echo "By: ".$author->data->display_name;  ?></h1>
 <p class="h1Classes"><?php echo get_the_author_meta('description', $author->data->ID); ?></p>
 <ul class="classes-post">

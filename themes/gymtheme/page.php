@@ -1,7 +1,7 @@
 <?php get_header(); 
 
 ?>
-<main class="page no-side">
+<main class="pageS no-side">
 
 
     <?php get_template_part('template-parts/page','loop'); ?>

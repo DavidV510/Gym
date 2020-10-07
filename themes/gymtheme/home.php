@@ -2,7 +2,7 @@
 
 ?>
 
-<main class="page no-side">
+<main class="pageS no-side">
 <h1 class="h1Classes">Blog</h1>
 <?php get_template_part('template-parts/blog','loop'); ?>
   

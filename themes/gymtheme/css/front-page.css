@@ -1,0 +1,283 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Front Head */
+
+body.home .head{
+    height: 100vh;
+    min-height: 65rem;
+}
+
+body.home .head-grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: repeat(5,1fr);
+    height: 100%;
+}
+
+body.home .head-grid .nav{
+    grid-column: 1/5;
+}
+
+body.home .head-grid .tag{
+    grid-column: 2/4;
+    grid-row:3/4;
+    color: white;
+}
+
+body.home .head-grid .tag p{
+    font-size: 2rem;
+}
+
+
+/* Welcome */
+
+ .h1Classes{
+    color:var(--gymColor);
+    margin-top: 4rem;
+}
+
+/*  //////  */
+
+
+/* Gym Areas */
+.gym-areas{
+
+}
+
+.gym-areas .area-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.gym-areas .area-container .area{
+    flex: 0 0 25%;
+    position: relative;
+}
+.gym-areas .area-container .area::after {
+    content: '';
+    background: linear-gradient(
+        rgba(0,0,0,0.75), 
+        rgba(0,0,0,0.75)
+    );
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.gym-areas .area-container .area p {
+    position: absolute;
+    margin: auto;
+    color: white;
+    z-index:10;
+    font-size: 2rem;
+    font-weight: 900;
+    opacity: 0;
+    transition: all .3s ease;
+    top: 0;
+    padding-left: 5rem;
+}
+
+.gym-areas .area-container .area:hover ~p {
+        opacity: 1;
+}
+
+
+.gym-areas .area-container .area img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* /////// */
+
+
+/* Home Classes */
+
+.classes-home .btn{
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--gymColor);
+    text-align: center;
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+}
+.classes-home .h1Classes{
+    margin-top: 4rem;
+}
+
+.classes-home .btn:hover{
+    color: black;
+}
+
+
+/* Instructors */
+.instructors{
+    margin-top: 16rem;
+}
+.instructors .instr{
+    margin-top: 16rem;
+    cursor: auto;
+}
+.instructors .instr .gym-instr{
+    cursor: auto;
+}
+.instructors .instr .gym-instr .card-content{
+    color: var(--gymColor);
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.instructors .instr .gym-instr .card-content {
+    opacity: 0%;
+    text-align: center;
+    transition: 0.3s ease all;
+}
+.instructors .instr .gym-instr:hover .card-content{
+    opacity: 100%;
+}
+
+
+
+/* ////////////////// */
+
+
+/* Testimonials */
+
+.test{
+    margin-top: 16rem;
+    background: linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ), url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 12rem 0;
+}
+.test h2 {
+    color: var(--white);
+}
+.test .test-cont {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.test .test-cont .test-list .testIt .testFoot
+.test{
+    color: var(--white);
+}
+.test .test-cont .test-list .testIt blockquote {
+    position: relative;
+    padding-left: 12rem;
+}
+.test .test-cont .test-list .testIt blockquote::before {
+    position: absolute;
+    top:0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 9rem;
+    background-image: url(img/quote.svg);
+    background-repeat: no-repeat;
+}
+.test .test-cont .test-list .testIt .testFoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test .test-cont .test-list .testIt .testFoot img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.test .test-cont .test-list .testIt .testFoot p {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+/* For bxSlider */
+.test .test-cont .bx-wrapper {
+    background: transparent;
+    box-shadow:none;
+    border:none;
+}
+.test .test-cont .bx-wrapper .bx-pager.bx-default-pager a,
+.test .test-cont .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: white;
+}
+.test .test-cont .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: var(--gymColor);
+}
+
+
+
+@media (max-width:768px){
+
+    body.home .head-grid{
+        display: block;
+    }
+
+    .slicknav_menu {
+        position: absolute;
+        top: 15rem;
+        /* left: 7rem; */
+        width: 100%;
+        text-align: center;
+        *zoom: 1;
+        font-size: 16px;
+        background: #4c4c4c;
+        padding: 5px;
+    }
+
+    body.home .head-grid .tag {
+        margin-top: 12rem;
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+
+    /* Gym Areas */
+
+    .gym-areas .area-container{
+        display: block;
+    }
+    .gym-areas .area-container .area {
+        flex: 0 0 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /* Instructors */
+    .instructors .instr .gym-instr .card-content {
+        opacity: 100%;
+        text-align: center;
+    }
+    .instructors .instr .gym-instr .card-content {
+        padding-left: 0rem;
+    }
+
+}

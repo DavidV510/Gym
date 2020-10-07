@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="page with-side">
+<main class="pageS with-side">
 <div class="inside">
     <?php get_template_part('template-parts/page','loop'); ?>
 </div>

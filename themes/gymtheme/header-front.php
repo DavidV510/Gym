@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Gym</title>
+    <title>David Gym- Main</title>
     <?php wp_head(); ?>
     <style>
         html{
@@ -14,7 +14,7 @@
 </head>
 <body <?php body_class(  ) ?>>
     <header class="head">
-       <div class="container">
+       <div class="container head-grid">
          <div class="nav">
 
             <div class="logo">
@@ -32,6 +32,12 @@
               wp_nav_menu( $menus )
             ?>
          </div>
+
+         <div class="tag text-center">
+             <h1><?php the_field('home_tag'); ?></h1>
+             <p><?php the_field('home_content');?></p>
+         </div>
+
        </div>
-        
+         
     </header>

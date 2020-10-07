@@ -5,7 +5,7 @@ Template Name:Page with Sidebar
 get_header();
 ?>
 
-<main class="page with-side">
+<main class="pageS with-side">
 
     <div class="inside">
     <?php while(have_posts()):the_post(); ?>
