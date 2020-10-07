@@ -1,0 +1,43 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Contact */
+
+
+ .wpcf7 .wpcf7-submit {
+     cursor: pointer;
+    border: none;
+    background-color: var(--gymColor);
+    color: white;
+    font-family: var(--mainFont);
+    outline: none;
+    font-size: 3.2rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem 4.2rem;
+    transition: 0.2s ease all;
+}
+
+.wpcf7 .wpcf7-submit:hover{
+    color: black;
+}
+
+@media (max-width:768px){
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}

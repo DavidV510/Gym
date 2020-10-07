@@ -1,0 +1,74 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Blog */
+
+.classes-post .blog{
+
+}
+
+.classes-post .blog .post-categories{
+    position: absolute;
+    display: flex;
+    top: 3rem;
+    left: -1rem;
+}
+.classes-post .blog .post-categories li{
+    margin-left: 3rem;
+    border-radius: 0.5rem;
+    /* height: 3rem; */
+    padding: 0.5rem 0.2rem;
+    background-color: var(--gymColor);
+}
+
+.classes-post .blog .post-categories li a{
+    font-size: 2.2rem;
+    height: 9rem;
+    font-family: var(--mainFont);
+    color: white;
+    padding: 0rem 2rem;
+
+}
+
+@media (max-width:768px){
+    .classes-post .blog{
+        height: 66rem;
+    }
+
+    .classes-post .blog .post-categories{
+        display: flex;
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+    }
+
+    .classes-post .blog .post-categories li{
+        margin-left: 3rem;
+        border-radius: 0.5rem;
+        /* height: 3rem; */
+        padding: 0.5rem 0.2rem;
+        background-color: var(--gymColor);
+    }
+    .classes-post .blog .post-categories li a{
+        font-size: 2.2rem;
+        height: 9rem;
+        font-family: var(--mainFont);
+        color: white;
+        padding: 0rem 2rem;
+    
+    }
+    .classes-post .contBlog{
+        margin-top: 2rem;
+    }
+}

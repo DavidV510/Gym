@@ -20,7 +20,11 @@
     margin: 0 auto;
     margin-bottom: 1.5rem;
 }
-
+.page .h1Classes{
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--gymColor);
+}
 .page .title{
     text-align: center;
     margin: 3.5rem;

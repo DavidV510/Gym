@@ -18,37 +18,72 @@
 .classes-post{
     margin-top: 4rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
 }
 .classes-post .card{
     display: flex;
-    width: 45%;
+    margin-top: 3rem;
+    width: 48%;
     position: relative;
-    flex-wrap: wrap;
+    padding-left: 0rem;
 }
 
-.classes-post .card img{
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,219,219,1) 90%);
+
+
+
+/* Items */
+.classes-post .gym-item .aItem{
+    width: 100%;
 }
+
+.classes-post .gym-item{
+    cursor: pointer;
+}
+
+.classes-post .gym-item .itemImg{
+    width: 100%;  
+}
+.classes-post .gym-item .card-content .smallCon{
+    opacity: 0%;
+    transition: 0.3s ease all;
+}
+
+.classes-post .gym-item .itemImg:hover ~  .card-content .smallCon{
+   opacity: 100%;
+}
+.classes-post .gym-item .card-content:hover ~   .smallCon{
+    opacity: 100%;
+ }
 .classes-post .card .card-content{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, transparent 90%);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 3rem 0;
+    padding: 3rem 0rem;
     z-index: 1;
 }
-.classes-post .card .card-content a{
+
+.classes-post .card .card-content a, .itemTitle{
     color: white;
     font-weight: 600;
     font-size: 3.5rem;
+    display: inline-block;
+    padding-left: 2rem;
+    transition: all 0.5s ease;
+}
+
+.classes-post .card .card-content .itemTitle:hover{
+    color: var(--gymColor);
 }
 .classes-post .card .card-content p{
-    color:var(--gymColor);
+    color: var(--gymColor);
     font-weight: 700;
     font-size: 2rem;
+    padding-left: 2rem;
 }
 
 @media(max-width:768px){
@@ -60,8 +95,23 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,219,219,1) 90%);
         width: 100%;
         height: 52rem;
     }
+    .classes-post .card .card-content{
+        background: none;
+    }
     .classes-post .card .card-content a{
         color: black;
+        display: block;
+        padding-left: 0;
+        font-weight: 600;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+
+    .classes-post .card .card-content .itemTitle{
+        color: black;
+        display: block;
+        padding-left: 0;
         font-weight: 600;
         font-size: 3.5rem;
         text-align: center;
@@ -70,6 +120,12 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,219,219,1) 90%);
         color:var(--gymColor);
         font-weight: 700;
         font-size: 2rem;
+        padding-left: 0;
         text-align: center;
+    }
+
+    .classes-post .gym-item .card-content .smallCon{
+        opacity: 100%;
+        transition: 0.3s ease all;
     }
 }
